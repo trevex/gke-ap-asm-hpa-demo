@@ -31,7 +31,6 @@
             terraform
             tfsec
             tflint
-            pulumi-bin
           ];
         };
       }
