@@ -74,8 +74,8 @@ kubectl annotate serviceaccount --namespace custom-metrics \
 ## Setup Istio-Gateway and Services
 
 ```bash
-kubectl apply -f 2-ingress-gateway
-kubectl apply -f 3-services
+kubectl apply -f 2-ingress-gateway/
+kubectl apply -f 3-services/
 ```
 
 ## Notes
@@ -85,3 +85,6 @@ kubectl get --raw https://KUBE-APISERVER-IP:6443/apis/custom.metrics.k8s.io/v1be
 ```
 
 Metric kinds: https://github.com/GoogleCloudPlatform/k8s-stackdriver/tree/master/custom-metrics-stackdriver-adapter#metric-kinds
+
+Starting point for terraform setup (`0-cluster`): https://cloud.google.com/service-mesh/docs/unified-install/install-anthos-service-mesh-command
+
